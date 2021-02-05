@@ -12,4 +12,4 @@ Useing JavaScript I will build a browser-based video game that I will enter in a
 https://lylekilson.github.io/robot-gladiators/
 
 ## Contribution
-Made with Kyle Wilson's big #🧠#
+Made with Kyle Wilson's big 🧠
