@@ -21,7 +21,7 @@ console.log("You can put regular sentences in these.");
 console.log(enemyNames[0]);
 console.log(enemyNames[1]);
 console.log(enemyNames[2]);
-console.log(enemyNames.length);
+console.log(enemyNames.length - 1);
 
 for (var i = 0; i < enemyNames.length; i++) {
   console.log(enemyNames[i]);
@@ -105,4 +105,6 @@ var fight = function (enemyName) {
 };
 
 // run fight function to start game
-//fight();
+for(var i = 0; i < enemyNames.length; i++) {
+  fight(enemyNames[i]);
+}
