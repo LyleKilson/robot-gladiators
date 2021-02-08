@@ -1,7 +1,7 @@
 # robot-gladiators
 
 ## Purpose
-Using JavaScript I havec built a browser-based video game that I will enter in a fictional hackathon called the Con Solo Game Jam . The game is called Robot Gladiators!
+Using JavaScript I have built a browser-based video game that I will enter in a fictional hackathon called the Con Solo Game Jam . The game is called Robot Gladiators!
 
 
 ## Built With
