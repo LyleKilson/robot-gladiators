@@ -96,9 +96,6 @@ var startGame = function () {
       //  generate random damage value based on player's attack
       pickedEnemyObj.health = randomNumber(40, 60);
 
-      // use debugger to pause script from running and check what's going on at that moment in the code
-      //debugger;
-
       // pass the pickedenemy.name variable's value into the fight function, where it will assume the value of the enemy.name parameter
       fight(pickedEnemyObj);
 
@@ -153,12 +150,12 @@ var shop = function () {
   switch (shopOptionPrompt) {
     case "REFILL":
     case "refill":
-        playerInfo.refillHealth();
-        break;
+      playerInfo.refillHealth();
+      break;
     case "UPGRADE":
     case "upgrade":
-        playerInfo.upgradeAttack();
-        break;
+      playerInfo.upgradeAttack();
+      break;
     case "LEAVE":
     case "leave":
       window.alert("Leaving the store.");
@@ -181,8 +178,19 @@ var randomNumber = function (min, max) {
   return value;
 };
 
+var getPlayerName = function() {
+    var name = "";
+
+    while (name === "" || name === null) {
+        name = prompt("What is your robot's name?")
+    }
+
+    console.log("Your robot's name is " + name);
+    return name;
+}
+
 var playerInfo = {
-  name: window.prompt("What is your robot's name?"),
+  name: getPlayerName(),
   health: 100,
   attack: 10,
   money: 10,
